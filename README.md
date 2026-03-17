@@ -8,7 +8,7 @@ Generate beautiful CSS gradients instantly, preview them in real time and copy t
 
 ## 🚀 Live Demo
 
-👉 https://YOUR-LIVE-DEMO-LINK
+👉 https://johnyisbackk.github.io/js-random-gradient-generator/
 
 ---
 
