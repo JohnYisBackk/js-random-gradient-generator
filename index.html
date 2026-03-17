@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Random Gradient Generator PRO</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="generator-card">
+        <div class="top-bar">
+          <span class="badge">UI Project</span>
+          <span class="badge badge-soft">Vanilla JS</span>
+        </div>
+
+        <header class="hero">
+          <h1>Random Gradient Generator</h1>
+          <p class="subtitle">
+            Generate modern CSS gradients and preview them instantly.
+          </p>
+        </header>
+
+        <section class="preview-section">
+          <div id="gradientPreview" class="gradient-preview">
+            <div class="preview-overlay">
+              <span class="preview-label">Live Preview</span>
+              <h2 class="preview-title">Beautiful Gradient</h2>
+            </div>
+          </div>
+        </section>
+
+        <section class="controls-grid">
+          <article class="info-card">
+            <span class="card-label">Gradient CSS</span>
+            <code id="gradientCode" class="gradient-code">
+              linear-gradient(135deg, #6a11cb, #2575fc)
+            </code>
+          </article>
+
+          <article class="info-card direction-card">
+            <span class="card-label">Direction</span>
+            <select id="directionSelect" class="direction-select">
+              <option value="90deg">90deg</option>
+              <option value="135deg" selected>135deg</option>
+              <option value="180deg">180deg</option>
+              <option value="225deg">225deg</option>
+              <option value="270deg">270deg</option>
+              <option value="to right">to right</option>
+              <option value="to left">to left</option>
+              <option value="to top">to top</option>
+              <option value="to bottom">to bottom</option>
+            </select>
+          </article>
+        </section>
+
+        <section class="color-palette">
+          <article class="color-box">
+            <span class="color-label">Color 1</span>
+            <div id="colorOnePreview" class="color-swatch color-one"></div>
+            <span id="colorOneHex" class="color-hex">#6A11CB</span>
+          </article>
+
+          <article class="color-box">
+            <span class="color-label">Color 2</span>
+            <div id="colorTwoPreview" class="color-swatch color-two"></div>
+            <div id="colorTwoHex" class="color-hex">#2575FC</div>
+          </article>
+        </section>
+
+        <section class="actions">
+          <button id="generateBtn" class="primary-btn" type="button">
+            Generate Gradient
+          </button>
+
+          <button id="copyBtn" class="secondary-btn" type="button">
+            Copy CSS
+          </button>
+        </section>
+
+        <p id="statusMessage" class="status-message">
+          Ready to generate a new gradient.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
